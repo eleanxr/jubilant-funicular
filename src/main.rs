@@ -29,6 +29,7 @@ fn main() {
     }
 
     // Generate the time series
+    println!("time,left,right");
     for t in 0..100 {
         for color in colors.iter() {
             let nodes = node_map.get(&color.to_string()).unwrap();
